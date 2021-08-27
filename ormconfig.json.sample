@@ -1,0 +1,18 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "",
+  "password": "",
+  "database": "",
+  "logging": false,
+  "entities": [
+    "src/App/Models/*.ts"
+  ],
+  "migrations": [
+    "src/Database/Migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "src/Database/Migrations"
+  }
+}
