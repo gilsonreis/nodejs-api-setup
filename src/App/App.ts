@@ -12,12 +12,18 @@ class App {
     this.express = express()
     this.middlewares()
     this.database()
+    this.routes()
+  }
+
+  private routes () {
+    for (const route of routes) {
+      this.express.use(route)
+    }
   }
 
   private middlewares (): void {
     this.express.use(express.json())
     this.express.use(cors())
-    this.express.use(routes)
   }
 
   private database (): void {

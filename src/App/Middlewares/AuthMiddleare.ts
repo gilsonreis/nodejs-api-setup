@@ -7,7 +7,7 @@ interface TokenPayload {
   exp: number;
 }
 
-export default function authMiddleware (request: Request, response: Response, next: NextFunction) {
+function authMiddleware (request: Request, response: Response, next: NextFunction) {
   const { authorization } = request.headers
 
   if (!authorization) {
@@ -26,3 +26,5 @@ export default function authMiddleware (request: Request, response: Response, ne
     return response.sendStatus(401)
   }
 }
+
+export default authMiddleware

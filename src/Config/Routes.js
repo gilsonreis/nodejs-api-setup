@@ -1,10 +1,5 @@
-import { Router } from 'express'
+import UserRouter from '@routers/UserRouter'
 
-import UserController from '@controllers/UserController'
-
-const routes = Router()
-
-routes.get('/users', UserController.index)
-routes.post('/users', UserController.store)
-
-export default routes
+export default [
+  UserRouter
+]

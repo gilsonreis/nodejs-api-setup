@@ -38,6 +38,15 @@
       ],
       "@repositories/*": [
         "./src/App/Repositories/*"
+      ],
+      "@middlewares/*": [
+        "./src/App/Middlewares/*"
+      ],
+      "@validators/*": [
+        "./src/App/Validators/*"
+      ],
+      "@routers/*": [
+        "./src/Routers/*"
       ]
     }
   },
